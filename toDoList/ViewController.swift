@@ -9,10 +9,11 @@ import UIKit
 
 class ViewController: BaseViewController {
     
+    
     @IBOutlet weak var applicationTitle: UILabel!
-    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     var resultLabel: UILabel!
     
