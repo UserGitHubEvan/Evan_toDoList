@@ -87,44 +87,26 @@ class ViewController: BaseViewController {
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool)
-    {
-        if isMovingFromParent
-        {
-            print("View controller was popped")
-        } else {
-            print("New view controller was pushed")
-        }
-        super.viewWillDisappear(animated)
-        print("viewWillDisappear")
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // Представлення буде показано
         print("viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        // Представлення уже показано
         print("viewDidAppear")
     }
     
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        // Hide the navigation bar on the this view controller
-//        self.navigationController?.setNavigationBarHidden(true, animated: true)
-////        print("viewWillDisappear")
-//    }
-//
-//    override func viewDidDisappear(_ animated: Bool) {
-//        super.viewDidDisappear(animated)
-//        // Show the navigation bar on other view controllers
-//        self.navigationController?.setNavigationBarHidden(false, animated: true)
-////        print("viewDidDisappear")
-//    }
+    // відобразив показ ф-й: viewWillDisappear та viewDidDisappear
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        print("viewWillDisappear")
+    }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        print("viewDidDisappear")
+    }
 
 }
 
