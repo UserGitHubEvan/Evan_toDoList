@@ -58,6 +58,12 @@ class ViewController: BaseViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         print("loginAction")
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier != "fromLoginToTaskList" {
+            return true
+        }
         
         if let email = emailTextField.text,
            let password = passwordTextField.text {
@@ -83,6 +89,7 @@ class ViewController: BaseViewController {
         } else {
             resultLabel.text = "Fail: empty fields"
         }
+        return false
     }
     
     override func viewWillAppear(_ animated: Bool) {

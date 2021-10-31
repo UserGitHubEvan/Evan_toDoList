@@ -64,6 +64,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLD-sR-xfr"/>
+                                    <segue destination="CAO-aU-5eW" kind="show" identifier="fromLoginToTaskList" id="j15-PT-oHu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,6 +158,7 @@
                                 <connections>
                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFW-T9-5jm"/>
                                     <action selector="registrationAction:" destination="TsJ-Ys-rC6" eventType="touchUpInside" id="05c-dt-156"/>
+                                    <segue destination="CAO-aU-5eW" kind="show" identifier="fromRegistrationToTaskList" id="MXd-Ur-5SA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -199,6 +201,22 @@
             </objects>
             <point key="canvasLocation" x="2639.130434782609" y="80.357142857142847"/>
         </scene>
+        <!--Task List View Controller-->
+        <scene sceneID="Tp8-G8-e6O">
+            <objects>
+                <viewController id="CAO-aU-5eW" customClass="TaskListViewController" customModule="toDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fi3-yO-gT1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2uK-mB-QYI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rrb-KU-aVT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gii-TT-0UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2219" y="807"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cjg-vF-5FW">
             <objects>
@@ -218,12 +236,18 @@
             <point key="canvasLocation" x="928.98550724637687" y="81.026785714285708"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MXd-Ur-5SA"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
