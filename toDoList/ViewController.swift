@@ -73,6 +73,7 @@ class ViewController: BaseViewController {
                     if email == expectedEmail {
                         if password == expectedPassword {
                             resultLabel.text = "Success"
+                            return true
                         } else {
                             resultLabel.text = "Fail: wrong password"
                         }

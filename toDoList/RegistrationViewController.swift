@@ -26,6 +26,7 @@ class RegistrationViewController: BaseViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
         if let email = emailTextField.text,
            let password = passwordTextField.text {
             
