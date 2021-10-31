@@ -13,8 +13,6 @@
 		5272945C271CDCC50025BE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5272945B271CDCC50025BE1D /* Assets.xcassets */; };
 		5272945F271CDCC50025BE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5272945D271CDCC50025BE1D /* LaunchScreen.storyboard */; };
 		52729467272602530025BE1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729466272602530025BE1D /* BaseViewController.swift */; };
-		52729469272612CE0025BE1D /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52729468272612CE0025BE1D /* View.xib */; };
-		5272946B272615310025BE1D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272946A272615310025BE1D /* MyView.swift */; };
 		5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272946C272617A50025BE1D /* RegistrationViewController.swift */; };
 		527866602728948100E998AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729456271CDCC30025BE1D /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,8 +27,6 @@
 		5272945E271CDCC50025BE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52729460271CDCC50025BE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52729466272602530025BE1D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		52729468272612CE0025BE1D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-		5272946A272615310025BE1D /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		5272946C272617A50025BE1D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,12 +65,10 @@
 				52729456271CDCC30025BE1D /* ViewController.swift */,
 				52729466272602530025BE1D /* BaseViewController.swift */,
 				5272946C272617A50025BE1D /* RegistrationViewController.swift */,
-				5272946A272615310025BE1D /* MyView.swift */,
 				52729458271CDCC30025BE1D /* Main.storyboard */,
 				5272945B271CDCC50025BE1D /* Assets.xcassets */,
 				5272945D271CDCC50025BE1D /* LaunchScreen.storyboard */,
 				52729460271CDCC50025BE1D /* Info.plist */,
-				52729468272612CE0025BE1D /* View.xib */,
 			);
 			path = toDoList;
 			sourceTree = "<group>";
@@ -137,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52729469272612CE0025BE1D /* View.xib in Resources */,
 				5272945F271CDCC50025BE1D /* LaunchScreen.storyboard in Resources */,
 				5272945C271CDCC50025BE1D /* Assets.xcassets in Resources */,
 				5272945A271CDCC30025BE1D /* Main.storyboard in Resources */,
@@ -154,7 +147,6 @@
 				527866602728948100E998AC /* ViewController.swift in Sources */,
 				5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */,
 				52729467272602530025BE1D /* BaseViewController.swift in Sources */,
-				5272946B272615310025BE1D /* MyView.swift in Sources */,
 				52729453271CDCC30025BE1D /* AppDelegate.swift in Sources */,
 				52729455271CDCC30025BE1D /* SceneDelegate.swift in Sources */,
 			);
@@ -303,9 +295,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SS9BB8H228;
+				"DEVELOPMENT_TEAM[sdk=driverkit*]" = SS9BB8H228;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = toDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,8 +312,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.base.myapp.toDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.myapp.toDoList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,9 +326,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SS9BB8H228;
+				"DEVELOPMENT_TEAM[sdk=driverkit*]" = SS9BB8H228;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = toDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,8 +343,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.base.myapp.toDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.myapp.toDoList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

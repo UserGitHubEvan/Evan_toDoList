@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: BaseViewController {
     
-    
     @IBOutlet weak var applicationTitle: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -55,7 +54,6 @@ class ViewController: BaseViewController {
 //        applicationTitle.backgroundColor = UIColor.red
         
         loginButton.layer.cornerRadius = 15
-//        loginButton.
     }
     
     @IBAction func loginAction(_ sender: Any) {
