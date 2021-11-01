@@ -1,20 +1,17 @@
 //
-//  BaseViewController.swift
+//  TaskViewController.swift
 //  toDoList
 //
-//  Created by MacBook Pro on 25.10.2021.
+//  Created by MacBook Pro on 01.11.2021.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
-    
-    var backgroundColor: UIColor = .orange
+class TaskViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        view.backgroundColor = .blue
         // Do any additional setup after loading the view.
     }
     
