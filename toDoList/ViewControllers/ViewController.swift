@@ -65,32 +65,11 @@ class ViewController: BaseViewController {
             return true
         }
         
-        if let email = emailTextField.text,
-           let password = passwordTextField.text {
-            
-            if email.contains("@") {
-                if password.count > 8 {
-                    if email == expectedEmail {
-                        if password == expectedPassword {
-                            resultLabel.text = "Success"
-                            return true
-                        } else {
-                            resultLabel.text = "Fail: wrong password"
-                        }
-                    } else {
-                        resultLabel.text = "Fail: wrong email"
-                    }
-                    
-                } else {
-                    resultLabel.text = "Fail: password must be at leats 8 symbols"
-                }
-            } else {
-                resultLabel.text = "Fail: wrong email format"
-            }
-        } else {
-            resultLabel.text = "Fail: empty fields"
-        }
-        return false
+        let credentials = LoginCredentials()
+        credentials.email = emailTextField.text
+        credentials.password = passwordTextField.text
+        
+        return credentials.validate()
     }
     
     override func viewWillAppear(_ animated: Bool) {

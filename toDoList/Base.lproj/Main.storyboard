@@ -204,16 +204,15 @@
         <!--Task List View Controller-->
         <scene sceneID="Tp8-G8-e6O">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gii-TT-0UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="CAO-aU-5eW" customClass="TaskListViewController" customModule="toDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fi3-yO-gT1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHb-EX-uAH">
-                                <rect key="frame" x="314" y="811" width="80" height="31"/>
+                                <rect key="frame" x="324" y="811" width="70" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="60a-iM-UTX"/>
+                                    <constraint firstAttribute="width" constant="70" id="60a-iM-UTX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create"/>
@@ -231,6 +230,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rrb-KU-aVT"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gii-TT-0UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2218.840579710145" y="806.91964285714278"/>
         </scene>
