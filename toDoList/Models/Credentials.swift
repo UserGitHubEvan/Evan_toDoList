@@ -9,8 +9,15 @@ import Foundation
 
 class LoginCredentials: Credentials {
     
-    let expectedEmail: String = "test@test.com"
-    let expectedPassword: String = "123456789"
+    private var expectedEmail: String?
+    private var expectedPassword: String?
+    
+    override init(email: String?, password: String?) {
+        super.init(email: email, password: password)
+        
+        self.expectedEmail = "test@test.com"
+        self.expectedPassword = "123456789"
+    }
     
     override func validate() -> Bool {
         let isValid = super.validate()
@@ -21,6 +28,11 @@ class LoginCredentials: Credentials {
 class Credentials: CredentialsInterface {
     var email: String?
     var password: String?
+    
+    init(email: String?, password: String?) {
+        self.email = email
+        self.password = password
+    }
     
     func validate() -> Bool {
         if let email = self.email,

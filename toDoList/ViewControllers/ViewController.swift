@@ -65,11 +65,7 @@ class ViewController: BaseViewController {
             return true
         }
         
-        let credentials = LoginCredentials()
-        credentials.email = emailTextField.text
-        credentials.password = passwordTextField.text
-        
-        return credentials.validate()
+        return LoginCredentials(email: emailTextField.text, password: passwordTextField.text).validate()
     }
     
     override func viewWillAppear(_ animated: Bool) {

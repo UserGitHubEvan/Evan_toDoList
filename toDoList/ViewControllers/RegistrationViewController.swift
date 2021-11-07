@@ -12,8 +12,8 @@ class RegistrationViewController: BaseViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let expectedEmail: String = "test@test.com"
-    let expectedPassword: String = "123456789"
+//    let expectedEmail: String = "test@test.com"
+//    let expectedPassword: String = "123456789"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +27,7 @@ class RegistrationViewController: BaseViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
-        let credentials = Credentials()
-        credentials.email = emailTextField.text
-        credentials.password = passwordTextField.text
-        
-        return credentials.validate()
+        return Credentials(email: emailTextField.text, password: passwordTextField.text).validate()
     }
 
 }
