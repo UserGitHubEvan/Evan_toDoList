@@ -14,11 +14,12 @@
 		5272945F271CDCC50025BE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5272945D271CDCC50025BE1D /* LaunchScreen.storyboard */; };
 		52729467272602530025BE1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729466272602530025BE1D /* BaseViewController.swift */; };
 		5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272946C272617A50025BE1D /* RegistrationViewController.swift */; };
-		527441BD2733591E002DDFE5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527441BC2733591E002DDFE5 /* Task.swift */; };
 		527866602728948100E998AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729456271CDCC30025BE1D /* ViewController.swift */; };
 		528EF2F3272F4E3F00ACC970 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EF2F2272F4E3F00ACC970 /* TaskListViewController.swift */; };
 		528EF2F5272F654400ACC970 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EF2F4272F654400ACC970 /* TaskViewController.swift */; };
 		528EF2FA27334BBD00ACC970 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EF2F927334BBD00ACC970 /* Credentials.swift */; };
+		52FF726B273E8CB900512CC2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF726A273E8CB900512CC2 /* Task.swift */; };
+		52FF726D273E8CED00512CC2 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF726C273E8CED00512CC2 /* TaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		52729460271CDCC50025BE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52729466272602530025BE1D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5272946C272617A50025BE1D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
-		527441BC2733591E002DDFE5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = ../../../../../../Documents/Task.swift; sourceTree = "<group>"; };
 		528EF2F2272F4E3F00ACC970 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		528EF2F4272F654400ACC970 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		528EF2F927334BBD00ACC970 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		52FF726A273E8CB900512CC2 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		52FF726C273E8CED00512CC2 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				528EF2F927334BBD00ACC970 /* Credentials.swift */,
-				527441BC2733591E002DDFE5 /* Task.swift */,
+				52FF726A273E8CB900512CC2 /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +107,7 @@
 		528EF2F827334A8C00ACC970 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				52FF726C273E8CED00512CC2 /* TaskController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,12 +185,13 @@
 			files = (
 				527866602728948100E998AC /* ViewController.swift in Sources */,
 				528EF2F5272F654400ACC970 /* TaskViewController.swift in Sources */,
+				52FF726B273E8CB900512CC2 /* Task.swift in Sources */,
 				528EF2FA27334BBD00ACC970 /* Credentials.swift in Sources */,
 				5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */,
 				52729467272602530025BE1D /* BaseViewController.swift in Sources */,
 				52729453271CDCC30025BE1D /* AppDelegate.swift in Sources */,
 				52729455271CDCC30025BE1D /* SceneDelegate.swift in Sources */,
-				527441BD2733591E002DDFE5 /* Task.swift in Sources */,
+				52FF726D273E8CED00512CC2 /* TaskController.swift in Sources */,
 				528EF2F3272F4E3F00ACC970 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
