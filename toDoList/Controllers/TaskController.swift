@@ -9,7 +9,7 @@ import Foundation
 
 class TaskController {
     
-    var tasks: [Task] = [
+    private var tasks: [Task] = [
         Task.init(title: "Some title", description: "Description1", taskDate: Date(), createDate: Date(), status: "Done"),
         Task.init(title: "1 Some title", description: "Description2", taskDate: Date(), createDate: Date(), status: "Progress"),
         Task.init(title: "2 Some title", description: "Description3", taskDate: Date(), createDate: Date(), status: "Progress"),
@@ -21,6 +21,10 @@ class TaskController {
         Task.init(title: "Sport", description: "Description9", taskDate: Date(), createDate: Date(), status: "Done"),
         Task.init(title: "Run", description: "Description10", taskDate: Date(), createDate: Date(), status: "Progress")
     ]
+    
+    func add(new task: Task) {
+        tasks.append(task)
+    }
     
     func search(by title: String) -> [Task] {
         return tasks.filter { task in
@@ -52,11 +56,15 @@ class TaskController {
         return tasks
     }
     
-//    func sortByTitleFromLetterA() -> [Task] {
-//        tasks.sort { task1, letter = "A" in
-//            task1.title == letter
-//        }
-//        
-//        return tasks
-//    }
+    func sortByTitleFromLetterA() -> [Task] {
+        tasks.filter { task in
+            task.title == "A"
+        }
+    }
+    
+    func filter(by status: String) -> [Task] {
+        tasks.filter { task in
+            task.status == status
+        }
+    }
 }
