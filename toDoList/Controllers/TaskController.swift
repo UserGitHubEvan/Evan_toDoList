@@ -22,8 +22,20 @@ class TaskController {
         Task.init(title: "Run", description: "Description10", taskDate: Date(), createDate: Date(), status: "Progress")
     ]
     
+    func task(by index: Int) -> Task {
+        tasks[index]
+    }
+    
+    func tasksCount() -> Int {
+        tasks.count
+    }
+    
     func add(new task: Task) {
         tasks.append(task)
+    }
+    
+    func removeTask() {
+        tasks.removeLast()
     }
     
     func search(by title: String) -> [Task] {

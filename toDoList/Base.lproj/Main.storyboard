@@ -209,10 +209,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eMZ-Ke-Xgy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="051-Xz-5Eu">
+                                <rect key="frame" x="248" y="811" width="66" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTask:" destination="CAO-aU-5eW" eventType="touchUpInside" id="ctL-X3-vGH"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHb-EX-uAH">
-                                <rect key="frame" x="324" y="811" width="70" height="31"/>
+                                <rect key="frame" x="314" y="811" width="80" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="60a-iM-UTX"/>
+                                    <constraint firstAttribute="width" constant="80" id="60a-iM-UTX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create"/>
@@ -224,11 +236,20 @@
                         <viewLayoutGuide key="safeArea" id="2uK-mB-QYI"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="2uK-mB-QYI" firstAttribute="bottom" secondItem="051-Xz-5Eu" secondAttribute="bottom" constant="20" id="2bg-SK-KxU"/>
+                            <constraint firstItem="eMZ-Ke-Xgy" firstAttribute="top" secondItem="2uK-mB-QYI" secondAttribute="top" id="8FX-Lm-5wP"/>
+                            <constraint firstItem="2uK-mB-QYI" firstAttribute="trailing" secondItem="eMZ-Ke-Xgy" secondAttribute="trailing" id="98Y-Ik-FP9"/>
+                            <constraint firstItem="2uK-mB-QYI" firstAttribute="trailing" secondItem="051-Xz-5Eu" secondAttribute="trailing" constant="100" id="KKH-Qv-hCX"/>
+                            <constraint firstItem="eMZ-Ke-Xgy" firstAttribute="leading" secondItem="2uK-mB-QYI" secondAttribute="leading" id="LSC-eT-1ap"/>
                             <constraint firstItem="2uK-mB-QYI" firstAttribute="bottom" secondItem="VHb-EX-uAH" secondAttribute="bottom" constant="20" id="Qjs-sX-CUL"/>
+                            <constraint firstItem="2uK-mB-QYI" firstAttribute="bottom" secondItem="eMZ-Ke-Xgy" secondAttribute="bottom" id="SPS-RO-Nuj"/>
                             <constraint firstItem="2uK-mB-QYI" firstAttribute="trailing" secondItem="VHb-EX-uAH" secondAttribute="trailing" constant="20" id="VQX-9Z-my3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rrb-KU-aVT"/>
+                    <connections>
+                        <outlet property="tableView" destination="eMZ-Ke-Xgy" id="1Qd-Nm-YCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gii-TT-0UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,6 +299,9 @@
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

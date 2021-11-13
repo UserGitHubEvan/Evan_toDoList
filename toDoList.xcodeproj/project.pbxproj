@@ -15,6 +15,8 @@
 		52729467272602530025BE1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729466272602530025BE1D /* BaseViewController.swift */; };
 		5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272946C272617A50025BE1D /* RegistrationViewController.swift */; };
 		527866602728948100E998AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729456271CDCC30025BE1D /* ViewController.swift */; };
+		528CC0DE273EDE620021EDA2 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CC0DC273EDE620021EDA2 /* TaskTableViewCell.swift */; };
+		528CC0DF273EDE620021EDA2 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528CC0DD273EDE620021EDA2 /* TaskTableViewCell.xib */; };
 		528EF2F3272F4E3F00ACC970 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EF2F2272F4E3F00ACC970 /* TaskListViewController.swift */; };
 		528EF2F5272F654400ACC970 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EF2F4272F654400ACC970 /* TaskViewController.swift */; };
 		528EF2FA27334BBD00ACC970 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EF2F927334BBD00ACC970 /* Credentials.swift */; };
@@ -33,6 +35,8 @@
 		52729460271CDCC50025BE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52729466272602530025BE1D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5272946C272617A50025BE1D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		528CC0DC273EDE620021EDA2 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		528CC0DD273EDE620021EDA2 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		528EF2F2272F4E3F00ACC970 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		528EF2F4272F654400ACC970 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		528EF2F927334BBD00ACC970 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
@@ -83,9 +87,19 @@
 			path = toDoList;
 			sourceTree = "<group>";
 		};
+		528CC0E0273EDE740021EDA2 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				528CC0DC273EDE620021EDA2 /* TaskTableViewCell.swift */,
+				528CC0DD273EDE620021EDA2 /* TaskTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 		528EF2F627334A6A00ACC970 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				528CC0E0273EDE740021EDA2 /* TableCells */,
 				52729456271CDCC30025BE1D /* ViewController.swift */,
 				52729466272602530025BE1D /* BaseViewController.swift */,
 				5272946C272617A50025BE1D /* RegistrationViewController.swift */,
@@ -170,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528CC0DF273EDE620021EDA2 /* TaskTableViewCell.xib in Resources */,
 				5272945F271CDCC50025BE1D /* LaunchScreen.storyboard in Resources */,
 				5272945C271CDCC50025BE1D /* Assets.xcassets in Resources */,
 				5272945A271CDCC30025BE1D /* Main.storyboard in Resources */,
@@ -185,6 +200,7 @@
 			files = (
 				527866602728948100E998AC /* ViewController.swift in Sources */,
 				528EF2F5272F654400ACC970 /* TaskViewController.swift in Sources */,
+				528CC0DE273EDE620021EDA2 /* TaskTableViewCell.swift in Sources */,
 				52FF726B273E8CB900512CC2 /* Task.swift in Sources */,
 				528EF2FA27334BBD00ACC970 /* Credentials.swift in Sources */,
 				5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */,
