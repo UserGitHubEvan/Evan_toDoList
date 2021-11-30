@@ -53,10 +53,3 @@ class Credentials: CredentialsInterface {
         return false
     }
 }
-
-protocol CredentialsInterface {
-    var email: String? { get set }
-    var password: String? { get set }
-    
-    func validate() -> Bool
-}

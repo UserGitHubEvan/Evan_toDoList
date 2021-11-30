@@ -37,12 +37,29 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZB-Cl-YwW">
+                        <rect key="frame" x="106" y="5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP3-TK-x4Q">
+                        <rect key="frame" x="106" y="24" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Zmc-32-baA" firstAttribute="top" secondItem="2lk-2p-V6K" secondAttribute="bottom" constant="10" id="4Oi-kH-gFV"/>
+                    <constraint firstItem="ZZB-Cl-YwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5H9-Vc-vUr"/>
                     <constraint firstItem="Zmc-32-baA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Fuc-A3-teP"/>
                     <constraint firstItem="2lk-2p-V6K" firstAttribute="top" secondItem="Dyg-S9-Qba" secondAttribute="bottom" constant="3" id="GlA-ms-ow2"/>
+                    <constraint firstItem="PP3-TK-x4Q" firstAttribute="top" secondItem="ZZB-Cl-YwW" secondAttribute="bottom" constant="3" id="IX5-5N-hxv"/>
+                    <constraint firstItem="PP3-TK-x4Q" firstAttribute="leading" secondItem="2lk-2p-V6K" secondAttribute="trailing" constant="30" id="Vew-kT-gGK"/>
                     <constraint firstItem="Dyg-S9-Qba" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fYp-Ma-9G5"/>
+                    <constraint firstAttribute="trailing" secondItem="ZZB-Cl-YwW" secondAttribute="trailing" constant="181" id="k9l-WK-z7N"/>
+                    <constraint firstItem="ZZB-Cl-YwW" firstAttribute="leading" secondItem="Dyg-S9-Qba" secondAttribute="trailing" constant="20" id="kfn-N7-4Dc"/>
                     <constraint firstItem="Dyg-S9-Qba" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tqo-LR-XjW"/>
                     <constraint firstItem="2lk-2p-V6K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="uWu-gG-5iR"/>
                     <constraint firstAttribute="bottom" secondItem="Zmc-32-baA" secondAttribute="bottom" constant="10" id="vVF-j2-gII"/>
@@ -52,6 +69,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="createdDataLabel" destination="Dyg-S9-Qba" id="RwY-U1-ziG"/>
+                <outlet property="resultCreateDateLabel" destination="ZZB-Cl-YwW" id="wGl-zg-erl"/>
+                <outlet property="resultTaskDateLabel" destination="PP3-TK-x4Q" id="V83-VX-9o7"/>
                 <outlet property="startDataLabel" destination="2lk-2p-V6K" id="EJ6-KC-HOE"/>
                 <outlet property="titleLabel" destination="Zmc-32-baA" id="dds-pL-jke"/>
             </connections>
