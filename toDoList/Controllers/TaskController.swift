@@ -74,7 +74,7 @@ class TaskController {
         }
     }
     
-    func filter(by status: String) -> [Task] {
+    func filterStatus(by status: String) -> [Task] {
         tasks.filter { task in
             task.status == status
         }

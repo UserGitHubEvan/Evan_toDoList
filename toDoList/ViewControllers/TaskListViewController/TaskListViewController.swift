@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TaskListViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+class TaskListViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,17 +18,23 @@ class TaskListViewController: BaseViewController, UITableViewDataSource, UITable
 
         navigationController?.navigationBar.isHidden = true
         
+        prepareTableView()
+    }
+    
+    func prepareTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UINib.init(nibName: "TaskTableViewCell", bundle: nil), forCellReuseIdentifier: "TaskCell")
-        
     }
     
     @IBAction func deleteTask(_ sender: Any) {
         self.taskController.removeTask()
         tableView.reloadData()
     }
+    
+}
+
+extension TaskListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         taskController.tasksCount()
@@ -38,9 +44,9 @@ class TaskListViewController: BaseViewController, UITableViewDataSource, UITable
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTableViewCell
         
-        cell.titleLabel.text = taskController.task(by: indexPath.row).title
+        cell.fill(with: taskController.task(by: indexPath.row))
         
         return cell
     }
-
+    
 }
