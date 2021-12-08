@@ -13,45 +13,10 @@ class ViewController: BaseViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    
-    var resultLabel: UILabel!
-    
-    let expectedEmail: String = "test@test.com"
-    let expectedPassword: String = "123456789"
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
-//        super.viewDidLoad()
-        print("viewDidLoad")
-        
-//        self.view.backgroundColor = .purple
-        
-        resultLabel = UILabel.init()
-        resultLabel.text = ""
-        resultLabel.frame = CGRect.init(x: 50, y: 50, width: 50, height: 20)
-        view.addSubview(resultLabel)
-        resultLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.init(item: resultLabel!,
-                                attribute: .bottom,
-                                relatedBy: .equal,
-                                toItem: loginButton,
-                                attribute: .top,
-                                multiplier: 1,
-                                constant: -20).isActive = true
-        
-        NSLayoutConstraint.init(item: resultLabel!,
-                                attribute: .centerX,
-                                relatedBy: .equal,
-                                toItem: view,
-                                attribute: .centerX,
-                                multiplier: 1,
-                                constant: 0).isActive = true
-        
-        /*
-         Create project
-         */
-        
-//        applicationTitle.backgroundColor = UIColor.red
+        super.viewDidLoad()
         
         loginButton.layer.cornerRadius = 15
     }
@@ -65,17 +30,9 @@ class ViewController: BaseViewController {
             return true
         }
         
-        return LoginCredentials(email: emailTextField.text, password: passwordTextField.text).validate()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("viewWillAppear")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("viewDidAppear")
+        let credentialsController = CredentialsController(credentials: Credentials(email: emailTextField.text, password: passwordTextField.text))
+        
+        return credentialsController.validate() && credentialsController.checkCredentials()
     }
     
     // відобразив показ ф-й: viewWillDisappear та viewDidDisappear

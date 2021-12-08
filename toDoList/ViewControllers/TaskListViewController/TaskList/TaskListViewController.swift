@@ -24,6 +24,7 @@ class TaskListViewController: BaseViewController {
     func prepareTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        
         tableView.register(UINib.init(nibName: "TaskTableViewCell", bundle: nil), forCellReuseIdentifier: "TaskCell")
     }
     

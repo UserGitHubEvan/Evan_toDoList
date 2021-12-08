@@ -67,6 +67,12 @@
                                     <segue destination="CAO-aU-5eW" kind="show" identifier="fromLoginToTaskList" id="j15-PT-oHu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2W-2p-lyw">
+                                <rect key="frame" x="159.5" y="695" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -74,6 +80,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yW7-1d-0ia" secondAttribute="bottom" constant="20" id="43Q-f9-lVT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v43-6X-2C6" secondAttribute="trailing" constant="20" id="5KK-dH-gTH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tgf-Sg-f5K" secondAttribute="trailing" constant="90" id="6Qe-kX-I6w"/>
+                            <constraint firstItem="c2W-2p-lyw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6gv-CW-6gg"/>
+                            <constraint firstItem="7Ql-mf-Idt" firstAttribute="top" secondItem="c2W-2p-lyw" secondAttribute="bottom" constant="20" id="7WB-ni-yvH"/>
                             <constraint firstItem="alB-ZX-d17" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7lB-gN-ZMo"/>
                             <constraint firstItem="yW7-1d-0ia" firstAttribute="top" secondItem="7Ql-mf-Idt" secondAttribute="bottom" constant="20" id="BMm-kq-sFq"/>
                             <constraint firstItem="v43-6X-2C6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CxC-Uv-zTY"/>
@@ -106,6 +114,7 @@
                         <outlet property="emailTextField" destination="alB-ZX-d17" id="CIp-GG-pIg"/>
                         <outlet property="loginButton" destination="7Ql-mf-Idt" id="hsa-d3-M0h"/>
                         <outlet property="passwordTextField" destination="bMp-q8-orW" id="tdN-qx-QGN"/>
+                        <outlet property="resultLabel" destination="c2W-2p-lyw" id="khZ-OM-J4Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -291,7 +300,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MXd-Ur-5SA"/>
+        <segue reference="j15-PT-oHu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">

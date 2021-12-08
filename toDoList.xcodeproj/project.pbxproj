@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52555ABF2746F43E005A6007 /* CredentialValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52555ABE2746F43E005A6007 /* CredentialValidation.swift */; };
+		5269B7002760E7AB0036CF02 /* CredentialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269B6FF2760E7AB0036CF02 /* CredentialsController.swift */; };
 		52729453271CDCC30025BE1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729452271CDCC30025BE1D /* AppDelegate.swift */; };
 		52729455271CDCC30025BE1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52729454271CDCC30025BE1D /* SceneDelegate.swift */; };
 		5272945A271CDCC30025BE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52729458271CDCC30025BE1D /* Main.storyboard */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		52555ABE2746F43E005A6007 /* CredentialValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialValidation.swift; sourceTree = "<group>"; };
+		5269B6FF2760E7AB0036CF02 /* CredentialsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsController.swift; sourceTree = "<group>"; };
 		5272944F271CDCC30025BE1D /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52729452271CDCC30025BE1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52729454271CDCC30025BE1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,10 +84,26 @@
 		52555ABD2746ECE7005A6007 /* TaskListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5269B6FE2760E6840036CF02 /* TaskList */,
+			);
+			path = TaskListViewController;
+			sourceTree = "<group>";
+		};
+		5269B6FD2760E5D60036CF02 /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				528EF2F927334BBD00ACC970 /* Credentials.swift */,
+			);
+			path = Credentials;
+			sourceTree = "<group>";
+		};
+		5269B6FE2760E6840036CF02 /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
 				528CC0E0273EDE740021EDA2 /* TableCells */,
 				528EF2F2272F4E3F00ACC970 /* TaskListViewController.swift */,
 			);
-			path = TaskListViewController;
+			path = TaskList;
 			sourceTree = "<group>";
 		};
 		52729446271CDCC30025BE1D = {
@@ -146,7 +162,7 @@
 		528EF2F727334A8200ACC970 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				528EF2F927334BBD00ACC970 /* Credentials.swift */,
+				5269B6FD2760E5D60036CF02 /* Credentials */,
 				52FF726A273E8CB900512CC2 /* Task.swift */,
 			);
 			path = Models;
@@ -155,8 +171,8 @@
 		528EF2F827334A8C00ACC970 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				52555ABE2746F43E005A6007 /* CredentialValidation.swift */,
 				52FF726C273E8CED00512CC2 /* TaskController.swift */,
+				5269B6FF2760E7AB0036CF02 /* CredentialsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,10 +256,10 @@
 				528EF2FA27334BBD00ACC970 /* Credentials.swift in Sources */,
 				5272946D272617A50025BE1D /* RegistrationViewController.swift in Sources */,
 				52729467272602530025BE1D /* BaseViewController.swift in Sources */,
-				52555ABF2746F43E005A6007 /* CredentialValidation.swift in Sources */,
 				52729453271CDCC30025BE1D /* AppDelegate.swift in Sources */,
 				52729455271CDCC30025BE1D /* SceneDelegate.swift in Sources */,
 				52FF726D273E8CED00512CC2 /* TaskController.swift in Sources */,
+				5269B7002760E7AB0036CF02 /* CredentialsController.swift in Sources */,
 				528EF2F3272F4E3F00ACC970 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

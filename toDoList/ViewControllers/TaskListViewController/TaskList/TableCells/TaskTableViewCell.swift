@@ -27,7 +27,6 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func fill(with model: Task) {
-        
         titleLabel.text = model.title
         
         let dateFormatter = DateFormatter()
