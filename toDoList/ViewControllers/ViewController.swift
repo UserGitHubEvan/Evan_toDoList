@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class ViewController: BaseViewController, UITextFieldDelegate {
     
     @IBOutlet weak var applicationTitle: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,7 +18,15 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         loginButton.layer.cornerRadius = 15
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
     }
     
     @IBAction func loginAction(_ sender: Any) {

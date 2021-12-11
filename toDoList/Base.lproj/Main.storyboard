@@ -271,10 +271,48 @@
                     <view key="view" contentMode="scaleToFill" id="oCm-h5-DX0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGI-i8-T1X">
+                                <rect key="frame" x="20" y="20" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gJ3-A3-Onj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7J-98-fUw">
+                                <rect key="frame" x="20" y="80" width="374" height="708"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. https://www.google.com</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="30s-hu-tVl"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="30s-hu-tVl" firstAttribute="trailing" secondItem="EGI-i8-T1X" secondAttribute="trailing" constant="20" id="KcS-dF-eCB"/>
+                            <constraint firstItem="30s-hu-tVl" firstAttribute="trailing" secondItem="v7J-98-fUw" secondAttribute="trailing" constant="20" id="L3g-n9-wi9"/>
+                            <constraint firstItem="v7J-98-fUw" firstAttribute="leading" secondItem="30s-hu-tVl" secondAttribute="leading" constant="20" id="PI0-Rl-dxr"/>
+                            <constraint firstItem="30s-hu-tVl" firstAttribute="bottom" secondItem="v7J-98-fUw" secondAttribute="bottom" constant="20" id="X8e-2t-eyo"/>
+                            <constraint firstItem="EGI-i8-T1X" firstAttribute="top" secondItem="30s-hu-tVl" secondAttribute="top" constant="20" id="pcq-Ap-naw"/>
+                            <constraint firstItem="EGI-i8-T1X" firstAttribute="leading" secondItem="30s-hu-tVl" secondAttribute="leading" constant="20" id="vqp-l2-74o"/>
+                            <constraint firstItem="v7J-98-fUw" firstAttribute="top" secondItem="EGI-i8-T1X" secondAttribute="bottom" constant="20" id="yxw-R4-EMD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vNY-Fi-Cmm"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="v7J-98-fUw" id="sUt-jn-1KW"/>
+                        <outlet property="titleTextField" destination="EGI-i8-T1X" id="L1g-f6-X7O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtU-Hg-JCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,7 +338,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="j15-PT-oHu"/>
+        <segue reference="MXd-Ur-5SA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
