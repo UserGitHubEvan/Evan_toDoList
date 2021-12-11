@@ -7,15 +7,23 @@
 
 import UIKit
 
-class RegistrationViewController: BaseViewController {
+class RegistrationViewController: BaseViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
     }
     
     @IBAction func registrationAction(_ sender: Any) {
